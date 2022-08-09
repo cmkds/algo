@@ -24,8 +24,7 @@ for idx in range(1 , (num//2)+1):
         elif str[num-idx] == '?':
             str[num - idx] = str[idx - 1]
             break
-        else:
-            break
+
 
 ##홀수 일 때 가운데 글자가 ? 라면 추가하니까 정답.
 if str[num//2] == '?':
@@ -36,4 +35,3 @@ if str[num//2] == '?':
 
 
 print(''.join(str))
-## str은 변경이 안됨 망했음.

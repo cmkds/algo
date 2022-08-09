@@ -1,7 +1,6 @@
 import sys
 sys.stdin = open('input.txt')
 
-idx = 0
 for test in range(10):
     x = int(input())
     lst = list(map(int, input().split()))
@@ -15,7 +14,6 @@ for test in range(10):
             a -=1
         total += cnt
 
-    idx += 1
-    print(f'#{idx} {total}')
+    print(f'#{test+1} {total}')
 
 

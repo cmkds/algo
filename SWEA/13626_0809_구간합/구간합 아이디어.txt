@@ -1,0 +1,11 @@
+구간옮기면서더할 때
+a = 1 + 2+ 3+ 4
+b = a -1 + 5
+c = b -2 + 6
+
+
+슬라이싱으로 더하는법
+sum(lst[i:i+m])
+
+n = len(lst)
+[sum(lst[i:i+m]) for i in range(n-m+1)] # 구간합 만드는 리스트
