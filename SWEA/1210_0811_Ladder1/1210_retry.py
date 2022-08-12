@@ -92,12 +92,14 @@ for _ in range(10):
                 ##왼쪽확인    : lst[y][x - 1] == 1:
                 ##오른쪽확인  : lst[y][x + 1] == 1:
                 ##위쪽확인   : lst[y - 1][x] == 1
+
         while 0 < x < 99:
             if lst[y][x + 1] == 1 or lst[y][x - 1] == 1:
                 if direction == -1 and lst[y][x - 1] == 1:
                     x -= 1
                 elif direction == 1 and lst[y][x + 1] == 1:
                     x += 1
+
                 else:
                     y -= 1
                     if direction == -1 and lst[y][x + 1] == 1 and lst[y][x - 1] == 0:
