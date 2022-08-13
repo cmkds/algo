@@ -27,13 +27,8 @@ for _ in range(10):
     ##위쪽확인   : lst[y - 1][x] == 1
     direction =0
 
-    #### 스타트는 양쪽에 1이 나올때까지 위로 올리면서 첫 방향을 잡는다.
-    while lst[y][x + 1] == 1 or lst[y][x - 1] == 1:
-        y -= 1
-    if lst[y][x + 1] == 1:
-        direction = 1
-    else:
-        direction = -1
+
+
 
     ### 첫 방향전환 나오기 전까지 위쪽으로 올리고 방향을 정해주는 코드
     #좌측벽일때 우측벽일때 아닐때 3가지
@@ -54,12 +49,12 @@ for _ in range(10):
     # 첫값이 좌측이면
     if x > 0 and lst[y][x - 1] == 1:
         direction = -1
-        x -= 1
+        # x -= 1
 
     # 첫값이 우측이면
     if x < 99 and lst[y][x + 1] == 1:
         direction = 1
-        x += 1
+        # x += 1
 
 
     # 맨위에 도착할때까지 while 문 반복
