@@ -35,3 +35,4 @@ for test in range(1, t+1):
     for i in range(n):
         print(f"{''.join(map(str,goosib(lst,n)[i]))} {''.join(map(str,baekpalsib(lst,n)[i]))} {''.join(map(str,ebaekcil(lst,n)[i]))}")
 
+#zip으로 배열 돌리기
