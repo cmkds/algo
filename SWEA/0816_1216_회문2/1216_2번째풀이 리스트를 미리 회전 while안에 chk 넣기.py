@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open('input.txt')
+sys.stdin = open('input2.txt')
 
 #리스트를 미리 회전해주고
 #chk를 break로 안하고 while문으로 확인

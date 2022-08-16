@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open('input.txt')
+sys.stdin = open('input2.txt')
 
 for _ in range(1, 11):
     test = int(input())
