@@ -1,12 +1,12 @@
-lst2= [[0]*n for _ in range(n)]
-for i in range(n):
-    for j in range(n):
-        lst2[i][j] = lst[j][i]
-
-for i in range(n):
-    for j in range(n):
-        if i>j:
-            lst[i][j] = lst[j][i]
+# lst2= [[0]*n for _ in range(n)]
+# for i in range(n):
+#     for j in range(n):
+#         lst2[i][j] = lst[j][i]
+#
+# for i in range(n):
+#     for j in range(n):
+#         if i>j:
+#             lst[i][j] = lst[j][i]
 
 import sys
 
