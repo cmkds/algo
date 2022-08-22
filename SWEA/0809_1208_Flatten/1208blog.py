@@ -19,13 +19,12 @@ def minn(lst):
             minNum = tmp
     return minNum
 
-#test 변수 1부터 받으려고 1,11
 for test in range(1,11):
-    #dump 횟수
-    dumpNum = int(input())
+
+    dumpNum = int(input())  #dump 횟수
     lst = list(map(int, input().split()))
 
-    ##덤프 횟수
+
     for _ in range(dumpNum):
         #list에서 최소값을 구해주는 함수에 lst를 넣어서
         #최소값 찾음

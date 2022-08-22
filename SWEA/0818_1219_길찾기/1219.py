@@ -66,7 +66,7 @@ for _ in range(10):
         start = lst[i]
         end = lst[i+1]
         gansunLst[start][end] = 1   ###i는 시작노드 i+1 도착노드
-
+    print(gansunLst)
     A = 0               #시작 노드
     B = 99              #도착 노드
 
