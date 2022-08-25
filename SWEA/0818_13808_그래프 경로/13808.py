@@ -23,7 +23,7 @@ for test in range(1, testNum+1):
         a, b = map(int, input().split())
         lst[a].append(b)
         #lst[b].append(a) #한방향만 되는거냐??? 아주친절하네
-
+    print(lst)
     X, Y = map(int, input().split()) #출발점, 도착점
 
     visited = [0] * N
