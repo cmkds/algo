@@ -8,19 +8,19 @@ def sideDice(start, Lst): #시작점 다이스 리스트를 받고
     diceLst = copy.deepcopy(Lst)
     startIdx = diceLst.index(start)
     if startIdx == 0:
-        endIdx = 5
+        # endIdx = 5
         end = diceLst[5]
     elif startIdx == 1:
-        endIdx = 3
+        # endIdx = 3
         end = diceLst[3]
     elif startIdx == 2:
-        endIdx = 4
+        # endIdx = 4
         end = diceLst[4]
     elif startIdx == 3:
-        endIdx = 1
+        # endIdx = 1
         end = diceLst[1]
     elif startIdx == 4:
-        endIdx = 4
+        # endIdx = 4
         end = diceLst[2]
     elif startIdx == 5:
         end = diceLst[0]
