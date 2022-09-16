@@ -1,15 +1,20 @@
-a = input().split('-')
+###괄호를 적절히 쳐서 이 식의 값을 !!최소!!로 만들어야한다.
+###sol. -이후 +를 가지고있는 숫자들을 모두 모아서 합해주면
+###가장 큰 덩어리를 뺄 수 있다.
 
+a = input().split('-')  ### -를 제거한 후 스플릿을 받는다.
+                        ### 이러면 -를 기준으로 리스트가 나누어진다.
 num = []
 
 for i in a:
     cnt = 0
-    s = i.split('+')
+    s = i.split('+')   ###그리고 각각리스트를 +로 스플릿해주어 나오는 숫자들을 모두 더 해준다.
     for j in s:
         cnt += int(j)
     num.append(cnt)
-    print(num)
-n = num[0]
-for i in range(1, len(num)):
+
+n = num[0]            ##가장 처음 값을 제외하고
+for i in range(1, len(num)): ###뒤의 값은 전부 -(숫+숫+숫+숫...)의 괄호 묶음이다.
     n -= num[i]
-print(n)
+
+print(n)               ##따라서 첫값에서 뒤의값들을 전부 빼주면 최소값이 나온다.
