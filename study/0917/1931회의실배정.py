@@ -11,3 +11,25 @@
 #둘째줄 ~~N+1
 ##회의 정보  . 회의시작시간, 끝나는 시간 2n31-1 보다 작거나 같은 자연수 혹은 0
 
+####첫째줄을 정렬하면
+N = int(input())
+time = []
+
+for _ in range(N):
+  start, end = map(int, input().split())
+  time.append([start, end])
+
+time = sorted(time, key=lambda a: a[0]) # 시작 시간을 기준으로 오름차순
+print(time)
+time = sorted(time, key=lambda a: a[1]) # 끝나는 시간을 기준으로 다시 오름차순
+print(time)
+last = 0 # 회의의 마지막 시간을 저장할 변수
+conut = 0 # 회의 개수를 저장할 변수
+
+for i, j in time:
+  if i >= last: # 시작시간이 회의의 마지막 시간보다 크거나 같을경우
+    conut += 1
+    last = j
+print(time)
+
+print(conut)
