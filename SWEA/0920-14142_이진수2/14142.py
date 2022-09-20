@@ -11,7 +11,7 @@ for test in range(1,1+testNum):
     while n:
        a, n = divmod(n, 2 ** i)
        res += str(int(a))
-       # print(divmod(n,2**i))
+       print(a,n)
        i -= 1
 
     if len(res)<=12:
