@@ -2,6 +2,15 @@ import sys
 sys.stdin = open('input.txt')
 from collections import defaultdict
 
+
+def dijkstra(s):
+    used = [s]
+    distance = [float('inf') for _ in range(V+1)]
+    distance[s] = 0
+
+    for e, weight in lst[s]:
+        distance[e] = weight
+
 testNum = int(input())
 
 for test in range(1,1+testNum):
@@ -13,3 +22,4 @@ for test in range(1,1+testNum):
         s,e,w = map(int, input().split())
         lst[s][e] = w
     print(lst)
+
