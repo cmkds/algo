@@ -1,13 +1,10 @@
 n = int(input())
-
+res = 0
 for i in range(n+1):
-    N = list(str(i))
-    res = i
-    for j in N:
-        res += int(j)
-    if res == n:
+    tmp = i + sum(map(int, str(i)))
+
+    if tmp == n:
+        res = i
         break
-if i == n:
-    print(0)
-else:
-    print(i)
+
+print(res)
