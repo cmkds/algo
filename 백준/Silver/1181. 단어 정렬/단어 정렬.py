@@ -3,20 +3,13 @@ input = sys.stdin.readline
 
 n = int(input())
 lst = []
-for _ in range(51):
-    lst.append([])
-for _ in range(n):
-    s = input().strip()
-    if s not in lst[len(s)]:
-        lst[len(s)].append(s)
+for i in range(n):
+    lst.append(input().strip())
 
-# print(lst)
-for i in range(1,51):
-    set(lst[i])
-    lst[i].sort()
 
+lst = list(set(lst))
 # print(lst)
-for i in range(1,51):
-    for j in range(len(lst[i])):
-        if lst[i][j]:
-            print(lst[i][j])
+lst.sort()
+lst.sort(key=len)
+
+print(*lst, sep='\n')
