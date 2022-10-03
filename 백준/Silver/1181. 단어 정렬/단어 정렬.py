@@ -1,9 +1,12 @@
+import sys
+input = sys.stdin.readline
+
 n = int(input())
 lst = []
 for _ in range(51):
     lst.append([])
 for _ in range(n):
-    s = input()
+    s = input().strip()
     if s not in lst[len(s)]:
         lst[len(s)].append(s)
 
